@@ -19,7 +19,7 @@ function init() {
     renderer.setClearColor(0xF5E7DD);
 
     scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xF5E7DD, 500, 850);
+    scene.fog = new THREE.Fog(0xF5E7DD, 100, 850);
 
     feathers = new THREE.Object3D()
     for (var i = 0; i < amount; i++) {
