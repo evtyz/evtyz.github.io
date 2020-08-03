@@ -11,8 +11,7 @@ function Navigation() {
           <Navbar expand="xl" variant="dark" bg="dark" style={{minHeight:'8vh', paddingTop:'1vh'}}>
             <Container>
               <Navbar.Brand href="#" style={{color: `rgba(255, 255, 255, .9)`}}>
-                <Image src="/logo.png" height="30" style={{marginRight: '2vw'}}/> 
-                EVAN ZHENG
+                <Image src="/logo.png" height="30" /> 
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
