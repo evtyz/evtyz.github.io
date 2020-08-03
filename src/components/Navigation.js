@@ -16,15 +16,14 @@ function Navigation() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link>HOME</Nav.Link>
                   <Nav.Link>PROJECTS</Nav.Link>
                   <Nav.Link>CONTACT ME</Nav.Link>
                 </Nav>
                 <Nav>
-                  <Nav.Link>
+                  <Nav.Link href="./Resume.pdf">
                     RESUME (PDF)
                   </Nav.Link>
-                  <Nav.Link>
+                  <Nav.Link href="https://github.com/richmondvan">
                     <GoMarkGithub/>
                   </Nav.Link>
                 </Nav>
