@@ -1,3 +1,8 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    /* background-color: rgba(33, 33, 33, 1); */
+}
+
 body .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1);
     font-family: 'Montserrat', sans-serif;

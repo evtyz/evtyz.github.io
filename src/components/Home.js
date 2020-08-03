@@ -9,7 +9,7 @@ function Home()
 {
     return (
         <div>
-            <Jumbotron style={{backgroundColor: '#343a40', marginTop: '2vh'}}>
+            <Jumbotron style={{marginTop: '2vh'}}>
                 <div style={{paddingBottom: '2vh'}}>
                     <Typewriter
                         onInit={(typewriter) => {
