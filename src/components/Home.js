@@ -13,8 +13,9 @@ function Home()
                 <div style={{paddingBottom: '2vh'}}>
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.changeCursor("<h1>|</h1>").typeString("<h1>Hi, I'm Evan!<h1>").start();
+                            typewriter.typeString("<h1>Hi, I'm Evan!<h1>").start();
                         }}
+                        options={{cursor: "<h1>|<h1>"}}
                     />
                 </div>
                 
