@@ -1,0 +1,14 @@
+body h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: #4C515D;
+    color: rgba(255, 255, 255, .75);
+}
+
+body hr {
+    background-color: darkgrey;
+}

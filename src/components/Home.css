@@ -1,0 +1,9 @@
+body h1 {
+    position: relative;
+    float: left;
+    color: #fff;
+}
+
+body p {
+    font-size: 1.2em;
+}
