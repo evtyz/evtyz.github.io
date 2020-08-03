@@ -22,7 +22,9 @@ function Home()
                 <hr/>
                 <p>
                     I'm an aspiring software developer and high-school student, based in Toronto, ON.
-                    If you're here, you might want to check out my projects below, or view my resume and GitHub in the navigation bar.
+                    My online handle is <code>richmondvan</code>. <br/>
+                    If you're here, you might want to check out my projects below, 
+                    view my <a href={'./Resume.pdf'}>resume</a>, or visit my <a href={'https://github.com/richmondvan'}>GitHub</a>.
                 </p>
             </Jumbotron>
         </div>

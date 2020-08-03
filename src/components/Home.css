@@ -4,6 +4,19 @@ body h1 {
     color: #fff;
 }
 
+body code {
+    color: #fff;
+}
+
+body a {
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+}
+
+body a:hover {
+    color: #fff;
+}
+
 body p {
     font-size: 1.2em;
 }

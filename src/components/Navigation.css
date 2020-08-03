@@ -1,17 +1,13 @@
-.navbar-dark .navbar-nav .nav-link:hover {
+body .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1);
-    font-family: 'Montserrat', 'Segoe UI', 'Helvetica', 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .75);
-    font-family: 'Montserrat', 'Segoe UI', 'Helvetica', 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-
+    font-style: normal;
 }
 
-.navbar-brand {
-    font-family: 'Montserrat', 'Segoe UI', 'Helvetica', 'Roboto', sans-serif;
-    font-weight: 600;
+body .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
