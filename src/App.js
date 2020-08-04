@@ -27,24 +27,6 @@ function App() {
           <Contacts />
           <hr/>
           <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
-          <hr/>
-          <Footer />
         </Container>
       </div>
     </div>
