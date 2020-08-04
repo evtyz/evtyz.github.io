@@ -31,6 +31,9 @@ body h1 {
 
     transform: translateX(-50vw) translateY(1vh) rotate(-135deg);
     z-index: -50;
+
+    
+
     /* overflow-x: hidden;
     overflow-y: hidden; */
 }
@@ -47,6 +50,9 @@ body {
     /* background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100); */
     background-size: cover;
     color: rgba(0, 0, 0, .75);
+
+    max-height: 100vh;
+    overflow-y: hidden;
 }
 
 #site {

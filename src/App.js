@@ -12,10 +12,12 @@ import { Container } from 'react-bootstrap';
 function App() {
   return (
     <div id="site">
-      <div id="background">
-        <Background />
-      </div>
-      <div id="backgroundfiller">
+      <div id="deco">
+        <div id="background">
+          <Background />
+        </div>
+        <div id="backgroundfiller">
+        </div>
       </div>
       <div id="foreground">
         <Navigation />
