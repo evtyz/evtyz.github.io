@@ -7,7 +7,7 @@ import './Navigation.css';
 
 function Navigation() {
     return (
-        <Navbar variant='light' expand="xl" style={{minHeight:'8vh', paddingTop:'1vh'}}>
+        <Navbar variant='light' expand="xl">
           <Container>
             <Navbar.Brand href="#">
               evan zheng
@@ -27,7 +27,7 @@ function Navigation() {
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
-            <hr/>
+
           </Container>
         </Navbar>
     )
