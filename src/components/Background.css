@@ -23,8 +23,26 @@ body .bg {
     right:var(--position, 50%);
     background:var(--accent);
     border-radius:100%;
-    animation:bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
-        bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+
+    
+    animation-name: bubble-size, bubble-move;
+    animation-duration: var(--time, 4s), var(--time, 4s);
+    animation-timing-function: ease-in, ease-in;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: var(--delay, 0s), var(--delay, 0s);
+    animation-direction: normal, normal;
+    animation-fill-mode: none, none;
+    animation-play-state: running, running;
+
+    -webkit-animation-name: bubble-size, bubble-move;
+    -webkit-animation-duration: var(--time, 4s), var(--time, 4s);
+    -webkit-animation-timing-function: ease-in, ease-in;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-delay: var(--delay, 0s), var(--delay, 0s);
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-fill-mode: none, none;
+    -webkit-animation-play-state: running, running;
+
     transform:translate(-50%, 100%);
 }
 
@@ -38,9 +56,30 @@ body .bg {
         height:0rem;
     }
 }
+
+@-webkit-keyframes bubble-move {
+    0%, 75% {
+        width:var(--size, 4rem);
+        height:var(--size, 4rem);
+    }
+    100% {
+        width:0rem;
+        height:0rem;
+    }
+}
+
 @keyframes bubble-move {
     0% {
-        top:-4rem;
+        top:-8rem;
+    }
+    100% {
+        top:var(--distance, 10rem);
+    }
+}
+
+@-webkit-keyframes bubble-move {
+    0% {
+        top:-8rem;
     }
     100% {
         top:var(--distance, 10rem);

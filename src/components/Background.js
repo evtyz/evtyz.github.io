@@ -12,7 +12,7 @@ function Background()
             className="bubble" 
             style = {{
                 "--size": (2 + Math.random() * 3) + 'rem',
-                "--distance": (6 + Math.random() * 4) + 'rem',
+                "--distance":  (6 + Math.random() * 4) + 'rem',
                 "--position": (-20 + Math.random() * 160) + 'rem',
                 "--time": (5 + Math.random() * 5) + 's',
                 "--delay": (-2 + Math.random() * -2) + 's'
