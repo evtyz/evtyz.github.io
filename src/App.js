@@ -11,7 +11,7 @@ import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div>
+    <div id="site">
       <div id="background">
         <Background />
       </div>
