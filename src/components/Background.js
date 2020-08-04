@@ -7,7 +7,7 @@ function Background()
 {
     let bubbles = [];
 
-    for (let i = 0; i < 128; i++) {
+    for (let i = 0; i < 64; i++) {
         bubbles.push(<div 
             className="bubble" 
             style = {{
