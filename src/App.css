@@ -1,14 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+    --accent: #00ffcc;
+    --accentdark: #00cfa5;
+}
+
 body h1 {
-    font-family: 'Montserrat';
-    font-weight: 600;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+#background {
+    transform-origin: top center;
+    position: fixed;
+    transform: translateX(-50vw) rotate(45deg);
+    z-index: -100;
+}
+
+/* translateY(max(30vh, 300px))  */
+
+#backgroundfiller {
+    transform-origin: top center;
+    position: fixed;
+    background-color: var(--accent);
+    height: 1000vh;
+    width: 200vw;
+
+    transform: translateX(-50vw) translateY(1vh) rotate(-135deg);
+    z-index: -50;
+}
+
+#foreground {
+    position: relative;
+    z-index: 100;
 }
 
 body {
-    font-family: 'Raleway';
-    background-color: #4C515D;
-    background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100);
+    font-family: 'Poppins';
+    font-weight: 300;
+    background-color: #FFFFFF;
+    /* background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100); */
     background-size: cover;
-    color: rgba(255, 255, 255, .75);
+    color: rgba(0, 0, 0, .75);
+}
+
+body h1 {
+    position: relative;
+    float: left;
+    font-size: 3em;
+}
+
+body code {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 body:after{
@@ -19,11 +63,24 @@ body:after{
     left:0;
     right:0;
     z-index:-1; /* needed to keep in the background */
-    background: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100) center center;
+    /* background: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100) center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+body a {
+    color: var(--accent);
+}
+
+body a:hover {
+    color: var(--accentdark);
+}
+
+body code {
+    font-family: 'Ubuntu Mono';
+    font-size: 1em;
 }
 
 body hr {

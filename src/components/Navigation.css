@@ -1,18 +1,24 @@
 .navbar {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0);
     /* background-color: rgba(33, 33, 33, 1); */
 }
 
-body .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+body .navbar-brand {
+    color: rgba(0, 0, 0, .7) !important;
     font-style: normal;
+    font-weight: bold;
 }
 
-body .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .75);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+body .navbar-brand:hover {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+body .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+body .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .7) !important;
+    font-weight: 400;
     font-style: normal;
 }

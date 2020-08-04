@@ -1,26 +1,14 @@
-body h1 {
-    position: relative;
-    float: left;
-    color: #fff;
+
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    max-width: 600px;
+    align-items: left;
 }
 
-body .jumbotron {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-body code {
-    color: #fff;
-}
-
-body a {
-    color: rgba(255, 255, 255, 0.75);
-    font-style: italic;
-}
-
-body a:hover {
-    color: #fff;
-}
-
-body p {
+.about {
     font-size: 1.2em;
 }
