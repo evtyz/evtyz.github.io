@@ -13,7 +13,7 @@ body h1 {
 
 #background {
     transform-origin: top center;
-    position: fixed;
+    position: absolute;
     transform: translateX(-50vw) rotate(45deg);
     z-index: -100;
 }
@@ -22,7 +22,7 @@ body h1 {
 
 #backgroundfiller {
     transform-origin: top center;
-    position: fixed;
+    position: absolute;
     background-color: var(--accent);
     height: 1000vh;
     width: 200vw;
