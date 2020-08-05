@@ -1,4 +1,4 @@
-# Personal Website
+# https://richmondvan.github.io/
 
 Made using ReactJS, set-up with [Create React App](https://github.com/facebook/create-react-app), and styled with [React Bootstrap](https://react-bootstrap.github.io/).
 
