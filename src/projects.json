@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Shapevolve",
+        "description": "A genetic algorithm to recreate artworks using simple shapes. Trained using Jupyter Notebooks, using Python 3, NumPy, OpenCV, Matplotlib, and scikit-image. Published on PyPI.",
+        "extendedDescription": "Shapevolve is a Python 3 library capable of recreating complex images in RGB color using basic OpenCV shapes. Using a genetic algorithm that has been optimized for multi-core processing, Shapevolve gradually attempts to minimize a mean-squared-error function between the original image and the reconstruction.",
+        "tags": [
+            "Python 3",
+            "Jupyter Notebook",
+            "NumPy",
+            "OpenCV",
+            "Matplotlib",
+            "scikit-image"
+        ],
+        "github": "https://github.com/richmondvan/Shapevolve",
+        "website": "https://richmondvan.github.io/Shapevolve",
+        "logo": "./projectimg/shapevolve.png",
+        "gif": "./projectgif/shapevolve.gif"
+    },
+    {
+        "name": "Three-Body Simulation",
+        "description": "A JavaFX app that computationally simulates and visualizes the three-body problem in classical mechanics, using Dormand-Prince integration of ordinary differential equations.",
+        "extendedDescription": "The Three-Body Simulation app utilizes Apache Commons Math libraries and Dormand-Prince integration methods to compute and visualize the movement of three objects in 2D space according to Newton's law of universal gravitation. The app was built using the JavaFX GUI framework and packaged using Apache Shade.",
+        "tags": [
+            "Java",
+            "JavaFX",
+            "Apache Maven",
+            "Apache Shade"
+        ],
+        "github": "https://github.com/richmondvan/threebodysimulation",
+        "website": "https://richmondvan.github.io/threebodysimulation/",
+        "logo": "./projectimg/threebodysim.png",
+        "gif": "./projectgif/threebodysim.gif"
+    },
+    {
+        "name": "BiblioBarcode",
+        "description": "An Android app that scans ISBN barcodes on books, formats them into a bibliography using a variety of styles, and stores them in a SQLite database.",
+        "extendedDescription": "BiblioBarcode utilizes Google's Mobile Vision API to scan ISBN barcodes in photos, queries the Google Books API for metadata, and stores the resulting information in a SQLite database.",
+        "tags": [
+            "Java",
+            "Android",
+            "Gradle",
+            "SQLite"
+        ],
+        "github": "https://github.com/richmondvan/BiblioBarcode",
+        "website": "https://richmondvan.github.io/BiblioBarcode/",
+        "logo": "./projectimg/bibliobarcode.png",
+        "gif": "./projectgif/bibliobarcode.gif"
+    }
+        
+]

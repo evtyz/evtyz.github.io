@@ -22,13 +22,15 @@ function App() {
       <div id="foreground">
         <Navigation />
         <Container>
-          <Home />
-          <hr/>
-          <Projects />
-          <hr/>
-          <Contacts />
-          <hr/>
-          <Footer />
+          <div>
+            <Home />
+            <hr id="projects"/>
+            <Projects />
+            <hr id="contacts"/>
+            <Contacts />
+            <hr style={{marginBottom: '1em', width: 'auto'}}/>
+            <Footer />
+          </div>
         </Container>
       </div>
     </div>

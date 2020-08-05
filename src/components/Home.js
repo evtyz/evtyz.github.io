@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 import './Home.css'
 import Typewriter from 'typewriter-effect';
+import {Button} from 'react-bootstrap';
 
 function Home()
 {
@@ -20,9 +21,16 @@ function Home()
             <p className="about">
                 I'm an aspiring software developer and high-school student, based in Toronto, ON.
                 My online handle is <code>richmondvan</code>. <br/><br/>
-                If you're here, you might want to check out my projects below, 
-                view my <a href={'./Resume.pdf'}>resume</a>, or visit my <a href={'https://github.com/richmondvan'}>GitHub</a>.
             </p>
+            <div className="horizontal" style={{marginBottom: '10em'}}>
+                <Button href="./Resume.pdf" variant="outline-primary mainbutton">
+                résumé
+                </Button>
+                <Button href="https://github.com/richmondvan" variant="outline-primary">
+                github
+                </Button>
+            </div>
+
         </div>
     );
 }

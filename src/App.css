@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 :root {
-    --accent: #00ffcc;
-    --accentdark: #00cfa5;
+    --accent: rgba(0, 255, 204, 1);
+    --accenttransparent: rgba(0, 255, 204, 0.25);
+    --accentdark: rgba(0, 207, 165, 1);
+    --accentdarktransparent: rgba(0, 207, 165, 0.25);
+    --accentextradark: rgba(3, 171, 137, 1);
+    --accentextradarktransparent: rgba(3, 171, 137, 0.25);
 }
 
 body h1 {
@@ -13,29 +17,20 @@ body h1 {
 
 #background {
     transform-origin: top center;
-    position: absolute;
+    position: fixed;
     transform: translateX(-50vw) rotate(45deg);
     z-index: -100;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
 }
-
-/* translateY(max(30vh, 300px))  */
 
 #backgroundfiller {
     transform-origin: top center;
-    position: absolute;
+    position: fixed;
     background-color: var(--accent);
     height: 1000vh;
     width: 200vw;
 
     transform: translateX(-50vw) translateY(1vh) rotate(-135deg);
     z-index: -50;
-
-    
-
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
 }
 
 #foreground {
@@ -46,13 +41,10 @@ body h1 {
 body {
     font-family: 'Poppins';
     font-weight: 300;
-    background-color: #FFFFFF;
+    background-color: #eee;
     /* background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100); */
     background-size: cover;
     color: rgba(0, 0, 0, .75);
-
-    max-height: 100vh;
-    overflow-y: hidden;
 }
 
 #site {
@@ -68,23 +60,8 @@ body h1 {
     font-size: 3em;
 }
 
-body code {
-    color: rgba(0, 0, 0, 0.7);
-}
-
-body:after{
-    content:"";
-    position:fixed; /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-1; /* needed to keep in the background */
-    /* background: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100) center center; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body h2 {
+    font-size: 2em;
 }
 
 body a {
@@ -96,10 +73,44 @@ body a:hover {
 }
 
 body code {
+    color: var(--accentextradark);
     font-family: 'Ubuntu Mono';
     font-size: 1em;
 }
 
 body hr {
+    width: 10em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     background-color: darkgrey;
+}
+
+
+body .btn-outline-primary {
+    color: var(--accentdark);
+    border-color: var(--accentdark); 
+    margin-right: 1em;
+    border-radius: 10em;
+    border-width: 0.1em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+body .btn-outline-primary:focus {
+    color: white;
+    border-color: var(--accentdark);
+    background-color: var(--accentdark);
+    box-shadow: 0 0 0 0.2rem var(--accentdarktransparent);
+}
+
+body .btn-outline-primary:active {
+    color: white;
+    border-color: var(--accentextradark) !important;
+    background-color: var(--accentextradark) !important;
+    box-shadow: 0 0 0 0.2rem var(--accentextradarktransparent) !important;
+}
+
+body .btn-outline-primary:hover {
+    border-color: var(--accentdark);
+    background-color: var(--accentdark);
 }

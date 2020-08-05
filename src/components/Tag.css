@@ -1,0 +1,23 @@
+.tag {
+    display: inline-block;
+    margin-right: 0.25em;
+    margin-top: 0.25em;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+
+
+    border-radius: 100em;
+    border: solid;
+    border-width: 1px;
+    border-color: transparent;
+
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+
+    background-color: var(--accentdark);
+
+}

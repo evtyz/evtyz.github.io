@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { GoMarkGithub } from 'react-icons/go';
+import { IoMdDocument } from 'react-icons/io'
 import '../App.css'
 import './Navigation.css';
 
@@ -15,12 +16,12 @@ function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link>projects</Nav.Link>
-                <Nav.Link>contacts</Nav.Link>
+                <Nav.Link href="#projects">projects</Nav.Link>
+                <Nav.Link href="#contacts">contacts</Nav.Link>
               </Nav>
               <Nav>
                 <Nav.Link href="./Resume.pdf">
-                  resume
+                  <IoMdDocument size='18px'/>
                 </Nav.Link>
                 <Nav.Link href="https://github.com/richmondvan">
                   <GoMarkGithub/>

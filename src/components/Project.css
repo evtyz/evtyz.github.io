@@ -1,0 +1,32 @@
+.project {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 5em;
+    background-color: #fff;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginaround {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectmargin {
+    margin-bottom: 1rem;
+}
