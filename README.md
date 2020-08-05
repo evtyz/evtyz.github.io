@@ -1,3 +1,13 @@
+# Personal Website
+
+Made using ReactJS, set-up with [Create React App](https://github.com/facebook/create-react-app), and styled with [React Bootstrap](https://react-bootstrap.github.io/).
+
+Uses the following libraries:
+- [Typewriter-Effect](https://www.npmjs.com/package/typewriter-effect)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+"Gooey" effect adapted from [this Codepen](https://codepen.io/z-/pen/zYxdRQy).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
