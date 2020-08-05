@@ -22,3 +22,11 @@ body .navbar-nav .nav-link {
     font-weight: 400;
     font-style: normal;
 }
+
+.open > .dropdown-menu {
+    display: table-caption;
+}
+
+.navicon {
+    margin-right: 1em;
+}

@@ -86,10 +86,15 @@ body code {
 }
 
 body hr {
-    width: 10em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    background-color: darkgrey;
+    width: 5em;
+    padding-top: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    background-color: transparent;
+    border-bottom: solid;
+    border-color: rgba(0, 0, 0, .75);
+    border-width: 2px;
+    border-top: transparent;
 }
 
 body .btn-primary {
@@ -105,6 +110,7 @@ body .btn-primary {
 
 body .btn-primary:focus {
     color: white;
+    text-decoration: underline;
     background-color: var(--accentextradark) !important;
     border-color: var(--accentextradark) !important;
     box-shadow: 0 0 0 0.2rem var(--accentdarktransparent);
@@ -112,12 +118,14 @@ body .btn-primary:focus {
 
 body .btn-primary:active {
     color: white;
+    text-decoration: underline;
     border-color: var(--accentextremedark) !important;
     background-color: var(--accentextremedark) !important;
     box-shadow: 0 0 0 0.2rem var(--accentextradarktransparent) !important;
 }
 
 body .btn-primary:hover {
+    text-decoration: underline;
     border-color: var(--accentextradark);
     background-color: var(--accentextradark);
 }

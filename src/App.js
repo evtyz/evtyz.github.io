@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -23,11 +22,9 @@ function App() {
         <Container>
           <div>
             <Home />
-            <hr id="projects" />
+            <hr id="projects"/>
             <Projects />
-            <hr id="contacts" />
-            <Contacts />
-            <hr style={{ marginBottom: "1em", width: "auto" }} />
+            <hr style={{ marginBottom: "1em", width: "auto", borderWidth: "0.5px" }} />
             <Footer />
           </div>
         </Container>

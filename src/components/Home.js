@@ -26,14 +26,17 @@ function Home()
                 My online handle is <code>richmondvan</code>. <br/> <br/> 
             </p>
             <div className='buttongroup'>
+                <Button href="mailto:evan.ty.zheng@gmail.com" variant="primary marginup">
+                    email
+                </Button>
                 <Button href="./Resume.pdf" variant="primary marginup">
-                résumé
+                    résumé
                 </Button>
                 <Button href="https://github.com/richmondvan" variant="primary marginup">
-                github
+                    github
                 </Button>
                 <Button href="#projects" variant="primary marginup">
-                projects
+                    projects
                 </Button>
             </div>
 
