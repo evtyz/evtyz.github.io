@@ -9,10 +9,7 @@
     --accentdarktransparent: rgba(0, 207, 165, 0.25);
     --accentextradark: rgba(3, 171, 137, 1);
     --accentextradarktransparent: rgba(3, 171, 137, 0.25);
-}
-
-body h1 {
-    font-weight: 500;
+    --bgcolor: #eee;
 }
 
 #background {
@@ -38,13 +35,6 @@ body h1 {
     z-index: 100;
 }
 
-.scrollButton {
-    position: absolute;
-    top: 85vh;
-    left: 50%;
-    margin-left: -35px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -52,7 +42,7 @@ html {
 body {
     font-family: 'Poppins';
     font-weight: 300;
-    background-color: #eee;
+    background-color: var(--bgcolor);
     /* background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100); */
     background-size: cover;
     color: rgba(0, 0, 0, .75);
@@ -68,7 +58,8 @@ body {
 body h1 {
     position: relative;
     float: left;
-    font-size: 3em;
+    font-size: min(12vw, 4em);
+    font-weight: 500;
 }
 
 body h2 {
@@ -103,7 +94,7 @@ body hr {
 body .btn-outline-primary {
     color: var(--accentdark);
     border-color: var(--accentdark); 
-    margin-right: 1em;
+    margin-right: 0.5em;
     border-radius: 10em;
     border-width: 0.1em;
     font-weight: 500;
@@ -113,7 +104,7 @@ body .btn-outline-primary {
 body .btn-outline-primary:focus {
     color: white;
     border-color: var(--accentdark);
-    background-color: var(--accentdark);
+    background-color: var(--accentdark) !important;
     box-shadow: 0 0 0 0.2rem var(--accentdarktransparent);
 }
 
@@ -126,5 +117,5 @@ body .btn-outline-primary:active {
 
 body .btn-outline-primary:hover {
     border-color: var(--accentdark);
-    background-color: var(--accentdark);
+    background-color: var(--accentdark) !important;
 }

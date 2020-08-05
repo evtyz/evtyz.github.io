@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import Background from "./components/Background";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Container, Button } from "react-bootstrap";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
@@ -24,21 +23,6 @@ function App() {
         <Container>
           <div>
             <Home />
-            <div>
-              <Button
-                href="#projects"
-                variant="outline-primary"
-                style={{
-                  width: "70px",
-                  height: "70px",
-                  display: "flex",
-                  borderWidth: 0,
-                }}
-                className="scrollButton"
-              >
-                <MdKeyboardArrowDown size="40px" style={{margin: 'auto'}}/>
-              </Button>
-            </div>
             <hr id="projects" />
             <Projects />
             <hr id="contacts" />
