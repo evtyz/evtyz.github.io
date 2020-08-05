@@ -31,3 +31,26 @@
 .projectmargin {
     margin-bottom: 1rem;
 }
+
+.modalwindow {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.modalimage {
+    flex-shrink: 3;
+    max-height: 60vh;
+    max-width: 100%;
+}
+
+.closebutton {
+    display: flex !important;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}

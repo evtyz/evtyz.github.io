@@ -6,7 +6,7 @@
 body .navbar-brand {
     color: rgba(0, 0, 0, .7) !important;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 body .navbar-brand:hover {

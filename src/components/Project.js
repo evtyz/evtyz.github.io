@@ -5,7 +5,7 @@ import Tag from './Tag'
 import { Button, Modal } from 'react-bootstrap';
 import './Project.css'
 import { GoMarkGithub } from 'react-icons/go';
-import { MdOpenInBrowser, MdRemoveRedEye } from 'react-icons/md';
+import { MdOpenInBrowser, MdRemoveRedEye, MdClose } from 'react-icons/md';
 
 let tags = [];
 
@@ -57,21 +57,21 @@ const Project = (props) => {
                     More Info
                 </Button>
             </div>
-            <Modal show={show} onHide={handleClose} size="lg" centered>
+            <Modal show={show} onHide={handleClose} size="xl" centered>
                 <Modal.Header>
                     <Modal.Title>
                         <div style={{justifyContent: 'center'}}>
                             {info.name}
                         </div>
                     </Modal.Title>
-                    <Button variant="outline-primary" onClick={handleClose}>
-                        &times;
+                    <Button className="closebutton" variant="outline-primary" onClick={handleClose}>
+                        <MdClose size='15px'/>
                     </Button>
                 </Modal.Header>
                 <Modal.Body>
-                    <div style={{maxWidth: '100%', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', textAlign: 'center'}}>
+                    <div className="modalwindow">
                         {info.extendedDescription}<br/><br/>
-                        <img src={info.gif} alt={info.name + " demonstration"} style={{flexShrink: '3', maxHeight: '60vh', maxWidth: '100%'}}/>
+                        <img src={info.gif} alt={info.name + " demonstration"} className="modalimage"/>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
