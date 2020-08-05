@@ -1,7 +1,8 @@
 .tag {
     display: inline-block;
     margin-right: 0.25em;
-    margin-top: 0.25em;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
 
     padding-top: 0.2em;
     padding-bottom: 0.2em;
