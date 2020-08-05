@@ -69,11 +69,11 @@ body h3 {
 }
 
 body a {
-    color: var(--accent);
+    color: var(--accentdark);
 }
 
 body a:hover {
-    color: var(--accentdark);
+    color: var(--accentextradark);
 }
 
 body code {
