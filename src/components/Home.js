@@ -19,8 +19,9 @@ function Home()
             </div>
             <br/>
             <p className="about">
-                I'm an aspiring software developer and high-school student, based in Toronto, ON.
-                My online handle is <code>richmondvan</code>. <br/><br/>
+                I'm a programmer based in Toronto, ON, currently studying at St. Theresa of Lisieux CHS.
+                My online handle is <code>richmondvan</code>. <br/> <br/> 
+                If you're here, you might want to check out some of the links below, or scroll down to see my projects.<br/><br/>
             </p>
             <div className="horizontal" style={{marginBottom: '10em'}}>
                 <Button href="./Resume.pdf" variant="outline-primary mainbutton">

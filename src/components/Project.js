@@ -10,7 +10,7 @@ import { MdOpenInBrowser, MdRemoveRedEye } from 'react-icons/md';
 let tags = [];
 
 
-function loadTags(item, index) {
+function loadTags(item) {
     tags.push(<Tag tag={item}/>)
 }
 
@@ -34,9 +34,9 @@ const Project = (props) => {
     return (
         <div className="project">
             <div className="description">
-                <img src={info.logo} alt={info.name} className="projectmargin" style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', width: '192px', height: '192px'}}/>
+                <img src={info.logo} alt={info.name} className="projectmargin" style={{marginLeft: '1em', marginRight: '1em', width: '192px', height: '192px'}}/>
                 <div style={{flexBasis: '70%', flexGrow: 1, margin: '1em'}}>
-                    <h2 className="projectmargin">{info.name}</h2>
+                    <h3 className="projectmargin">{info.name}</h3>
                     <div className="projectmargin">
                         {tags}
                     </div>
