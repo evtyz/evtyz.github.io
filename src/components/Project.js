@@ -43,7 +43,7 @@ const Project = (props) => {
                     <p className="projectmargin">{info.description}</p>
                 </div>
             </div>
-            <div className="buttons" closeButton>
+            <div className="buttons">
                 <Button className="marginaround" variant="outline-primary" href={info.github} style={{}}>
                     <GoMarkGithub style={{marginRight: '0.5em'}}/>
                     Github
@@ -75,9 +75,21 @@ const Project = (props) => {
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-primary" onClick={handleClose} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        Close
-                    </Button>
+                    <div className="buttons" style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                        <Button className="marginaround" variant="outline-primary" href={info.github} style={{}}>
+                            <GoMarkGithub style={{marginRight: '0.5em'}}/>
+                            Github
+                        </Button>
+                        <Button className="marginaround" variant="outline-primary" href={info.website}>
+                            <MdOpenInBrowser size='18px' style={{marginRight: '0.5em'}}/>
+                            Website
+                        </Button>
+                        <Button className="marginaround" variant="outline-primary" onClick={handleClose}>
+                            <MdClose style={{marginRight: '0.5em'}}/>
+                            Close
+                        </Button>
+                    </div>
+
                 </Modal.Footer>
             </Modal>
         </div>
