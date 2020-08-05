@@ -4,6 +4,7 @@
     justify-content: center;
     height: 80vh;
     max-width: 600px;
+    min-height: 350px;
     align-items: left;
 }
 

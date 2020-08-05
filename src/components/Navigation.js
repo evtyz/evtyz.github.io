@@ -8,7 +8,7 @@ import './Navigation.css';
 
 function Navigation() {
     return (
-        <Navbar variant='light' expand="xl">
+        <Navbar variant='light' expand="sm">
           <Container>
             <Navbar.Brand href="#">
               evan zheng
