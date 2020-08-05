@@ -9,6 +9,8 @@
     --accentdarktransparent: rgba(0, 207, 165, 0.25);
     --accentextradark: rgba(3, 171, 137, 1);
     --accentextradarktransparent: rgba(3, 171, 137, 0.25);
+    --accentextremedark: rgba(0, 138, 110, 1);
+    --accentextremedarktransparent: rgba(0, 138, 110, 0.25);
     --bgcolor: #eee;
 }
 
@@ -90,6 +92,35 @@ body hr {
     background-color: darkgrey;
 }
 
+body .btn-primary {
+    color: 'white';
+    background-color: var(--accentdark);
+    border-color: var(--accentdark); 
+    margin-right: 0.5em;
+    border-radius: 10em;
+    border-width: 0.1em;
+    font-weight: 500;
+    display: inline-block;
+}
+
+body .btn-primary:focus {
+    color: white;
+    background-color: var(--accentextradark) !important;
+    border-color: var(--accentextradark) !important;
+    box-shadow: 0 0 0 0.2rem var(--accentdarktransparent);
+}
+
+body .btn-primary:active {
+    color: white;
+    border-color: var(--accentextremedark) !important;
+    background-color: var(--accentextremedark) !important;
+    box-shadow: 0 0 0 0.2rem var(--accentextradarktransparent) !important;
+}
+
+body .btn-primary:hover {
+    border-color: var(--accentextradark);
+    background-color: var(--accentextradark);
+}
 
 body .btn-outline-primary {
     color: var(--accentdark);
