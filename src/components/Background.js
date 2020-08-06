@@ -7,32 +7,50 @@ function Background()
 {
     let bubbles = [];
 
-    for (let i = 0; i < 48; i++) {
-        bubbles.push(<div 
-            className="bubble" 
-            style = {{
-                "--size": (6 + Math.random() * 6) + 'rem',
-                "--distance":  (4 + Math.random() * 4) + 'rem',
-                "--position": (-20 + Math.random() * 160) + 'rem',
-                "--time": (2 + Math.random() * 2) + 's',
-                "--delay": (-3 + Math.random() * 2) + 's'
-            }}></div>)
+    let colorDict = [
+        "var(--accent)",
+        "var(--accentsemilight",
+        "var(--accentlight)",
+        "var(--accentverylight)",
+        "var(--accentextralight)"
+    ]
+
+    let cornerBubble = <div
+    className="bubble"
+    style= {{
+        "--size": `min(160vh, 160vw)`,
+        "--xposition": "95vw",
+        "--yposition": "5vh",
+        "--time": "15s",
+        "--delay": "0.1s",
+        backgroundColor: colorDict[0]
+    }}></div>
+
+    bubbles.push(cornerBubble);
+
+
+    for (let i = 0; i < 6; i++) {
+        let size = 30 + Math.random() * 40
+        let bubble = <div 
+        className="bubble" 
+        style = {{
+            "--size": "max(" + size + "vh, " + size + "vw)",
+            "--xposition": (50 + Math.random() * 60) + 'vw',
+            "--yposition": (10 + Math.random() * 80) + 'vh',
+            "--time": (10 + Math.random() * 5) + 's',
+            "--delay": (0.1 + Math.random() * 0.4) + 's',
+            backgroundColor: colorDict[Math.floor((Math.random() * 5))]
+        }}></div>
+
+        bubbles.push(bubble);
     }
+
 
     return (
         <div className="bg">
             <div className="bubbles">
                 {bubbles}
             </div>
-            <svg style={{position:'fixed', top:'100vh'}}>
-                <defs>
-                    <filter id="blob">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur"></feGaussianBlur>
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -10" result="blob"></feColorMatrix>
-                        <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
-                    </filter>
-                </defs>
-            </svg>
         </div>
     );
 }

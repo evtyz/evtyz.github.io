@@ -1,6 +1,9 @@
 :root {
-    --accentextralight: #f0fffc;
-    --accentlight: #d6fff7;
+
+    --accentextralight: #5dffdf;
+    --accentverylight: #42ffd9;
+    --accentlight: #33ffd6;
+    --accentsemilight: #1effd2;
     --accent: rgba(0, 255, 204, 1);
     --accenttransparent: rgba(0, 255, 204, 0.25);
     --accentdark: rgba(0, 207, 165, 1);
@@ -13,21 +16,10 @@
 }
 
 #background {
-    transform-origin: top center;
+    /* transform-origin: top center; */
     position: fixed;
-    transform: translateX(-50vw) rotate(45deg);
+    /* transform: translateX(-50vw) rotate(45deg); */
     z-index: -100;
-}
-
-#backgroundfiller {
-    transform-origin: top center;
-    position: fixed;
-    background-color: var(--accent);
-    height: 1000vh;
-    width: 200vw;
-
-    transform: translateX(-50vw) translateY(1vh) rotate(-135deg);
-    z-index: -50;
 }
 
 #foreground {
@@ -79,7 +71,16 @@ body a:hover {
 }
 
 body code {
-    color: var(--accentextradark);
+    /* color: white;
+    background-color: var(--accentextradark);
+    padding: 2px;
+    margin: -2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 0.3em; */
+    color: rgba(0, 0, 0, .75);
     font-family: 'Roboto Mono';
 }
 

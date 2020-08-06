@@ -21,7 +21,7 @@ function Home()
                 />
             </div>
             <br/>
-            <p className="about">
+            <p className="about" style={{fontWeight: 400}}>
                 I'm a programmer based in Toronto, ON, studying at St. Theresa of Lisieux CHS.
                 My online handle is <code>richmondvan</code>. <br/> <br/> 
             </p>

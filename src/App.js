@@ -16,7 +16,6 @@ function App() {
         <div id="background">
           <Background />
         </div>
-        <div id="backgroundfiller"></div>
       </div>
       <div id="foreground">
         <Navigation />
