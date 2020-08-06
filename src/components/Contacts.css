@@ -1,0 +1,52 @@
+form {
+    margin-top: 1em;
+}
+
+.inlinegroup {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+.pure-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.field {
+    padding: 0.4em;
+    border-radius: 0.5em !important;
+    border: none;
+    outline: none;
+}
+
+.field:hover {
+    background-color: var(--accentlight);
+}
+
+.field:active {
+    background-color: var(--accentextralight)
+}
+
+.field:focus {
+    background-color: var(--accentextralight)
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.honeypot-field {
+    display: none;
+}
+
+label {
+    font-weight: 400;
+}

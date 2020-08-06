@@ -1,4 +1,6 @@
 :root {
+    --accentextralight: #f0fffc;
+    --accentlight: #d6fff7;
     --accent: rgba(0, 255, 204, 1);
     --accenttransparent: rgba(0, 255, 204, 0.25);
     --accentdark: rgba(0, 207, 165, 1);
@@ -102,6 +104,13 @@ body .btn-primary {
     border-width: 0.1em;
     font-weight: 500;
     display: inline-block;
+}
+
+body .btn-primary:disabled {
+    background-color: darkslategray !important;
+    box-shadow: none !important;
+    border-color: darkslategray !important;
+    text-decoration: none !important;
 }
 
 body .btn-primary:focus {
