@@ -1,5 +1,6 @@
 :root {
-
+    --bglightaccent: #f0fffc;
+    --bgheavyaccent: #d6fff7;
     --accentextralight: #5dffdf;
     --accentverylight: #42ffd9;
     --accentlight: #33ffd6;

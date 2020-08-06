@@ -7,7 +7,7 @@ form {
     margin-left: 1em;
     margin-right: 1em;
     flex-grow: 1;
-    min-width: 300px;
+    flex-basis: 300px;
 }
 
 .pure-group {
@@ -24,15 +24,15 @@ form {
 }
 
 .field:hover {
-    background-color: var(--accentlight);
+    background-color: var(--bgheavyaccent);
 }
 
 .field:active {
-    background-color: var(--accentextralight)
+    background-color: var(--bglightaccent)
 }
 
 .field:focus {
-    background-color: var(--accentextralight)
+    background-color: var(--bglightaccent)
 }
 
 input {
