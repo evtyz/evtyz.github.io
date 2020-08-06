@@ -5,10 +5,11 @@ Made using ReactJS, set-up with [Create React App](https://github.com/facebook/c
 Uses the following libraries:
 - [Typewriter-Effect](https://www.npmjs.com/package/typewriter-effect)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
-"Gooey" effect adapted from [this Codepen](https://codepen.io/z-/pen/zYxdRQy).
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As well as adaptations of the following code:
+- "Gooey" effect adapted from [this Codepen](https://codepen.io/z-/pen/zYxdRQy).
+- "Contact Me" adapted from [html-form-send-email-via-google-script-without-server](https://www.npmjs.com/package/html-form-send-email-via-google-script-without-server).
 
 ## Available Scripts
 
