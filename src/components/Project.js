@@ -5,7 +5,7 @@ import Tag from './Tag'
 import { Button, Modal } from 'react-bootstrap';
 import './Project.css'
 import { GoMarkGithub } from 'react-icons/go';
-import { MdOpenInBrowser, MdRemoveRedEye, MdClose } from 'react-icons/md';
+import { MdOpenInBrowser, MdRemoveRedEye, MdClose, MdAddBox } from 'react-icons/md';
 
 let tags = [];
 
@@ -29,7 +29,6 @@ const Project = (props) => {
     tags = [];
 
     info.tags.forEach(loadTags);
-
 
     return (
         <div className="project">
@@ -71,7 +70,20 @@ const Project = (props) => {
                 <Modal.Body>
                     <div className="modalwindow">
                         {info.extendedDescription}<br/><br/>
-                        <img src={info.gif} alt={info.name + " demonstration"} className="modalimage"/>
+                        <div className="imagecontainer"
+                            style={{
+                                width: '100%',
+                                position: 'relative',
+                                '--height': "min(60vh, " + (100 * info.gifdimensions[1]/info.gifdimensions[0]) + "vh)",
+                                paddingBottom: "var(--height)"
+                            }}>
+                            <img src={info.gif} alt={info.name + " demonstration"} 
+                                className="modalimage"
+                                style={{
+                                    height: "var(--height)",
+                                    left: "max(0%, calc(50% - 0.5 * var(--height) * " + (info.gifdimensions[0]/info.gifdimensions[1])+ "))"
+                                }}/>
+                        </div>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
