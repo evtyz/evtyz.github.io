@@ -49,6 +49,8 @@
     align-self: flex-start;
     max-width: 100%;
     max-height: 60vh;
+    height: auto;
+    width: auto;
 }
 
 .closebutton {
