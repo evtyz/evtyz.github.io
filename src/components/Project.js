@@ -5,7 +5,7 @@ import Tag from './Tag'
 import { Button, Modal } from 'react-bootstrap';
 import './Project.css'
 import { GoMarkGithub } from 'react-icons/go';
-import { MdOpenInBrowser, MdRemoveRedEye, MdClose, MdAddBox } from 'react-icons/md';
+import { MdOpenInBrowser, MdRemoveRedEye, MdClose } from 'react-icons/md';
 
 let tags = [];
 
@@ -29,6 +29,8 @@ const Project = (props) => {
     tags = [];
 
     info.tags.forEach(loadTags);
+
+    let leftImageMargin = 'max(-50%, ' + (-30 * info.gifdimensions[0] / info.gifdimensions[1]) + 'vh)';
 
     return (
         <div className="project">
@@ -70,20 +72,33 @@ const Project = (props) => {
                 <Modal.Body>
                     <div className="modalwindow">
                         {info.extendedDescription}<br/><br/>
-                        <div className="imagecontainer"
-                            style={{
-                                width: '100%',
-                                position: 'relative',
-                                '--height': "min(60vh, " + (100 * info.gifdimensions[1]/info.gifdimensions[0]) + "vh)",
-                                paddingBottom: "var(--height)"
+                        <div style={{
+                            width: '100%',
+                            position: 'relative'
+                        }}>
+                            <div style={{
+                                position: 'absolute',
+                                left: '50%',
+                                marginLeft: leftImageMargin,
+                                width: 'min(100%, ' + (60 * info.gifdimensions[0] / info.gifdimensions[1]) + 'vh)',
+                                maxHeight: '60vh'
                             }}>
-                            <img src={info.gif} alt={info.name + " demonstration"} 
-                                className="modalimage"
-                                style={{
-                                    height: "var(--height)",
-                                    left: "max(0%, calc(50% - 0.5 * var(--height) * " + (info.gifdimensions[0]/info.gifdimensions[1])+ "))"
-                                }}/>
+                                <img src={info.gif} alt={info.name + " demonstration"} 
+                                className="modalimage"/>
+                            </div>
                         </div>
+                        {/* To prevent content reflow */}
+                        <div style={{
+                            width: '100%',
+                            position: 'relative'
+                        }}>
+                            <img src={'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + info.gifdimensions[0] + " " + info.gifdimensions[1] + ' "%3E%3C/svg%3E'}
+                            style={{
+                                maxWidth: '100%',
+                                maxHeight: '60vh'
+                            }}/>
+                        </div>
+
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
