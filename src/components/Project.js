@@ -58,7 +58,7 @@ const Project = (props) => {
                     More Info
                 </Button>
             </div>
-            <Modal show={show} onHide={handleClose} size="xl" centered>
+            <Modal show={show} onHide={handleClose} size="xl" centered scrollable>
                 <Modal.Header>
                     <Modal.Title>
                         <div style={{justifyContent: 'center'}}>
@@ -93,12 +93,12 @@ const Project = (props) => {
                             position: 'relative'
                         }}>
                             <img src={'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + info.gifdimensions[0] + " " + info.gifdimensions[1] + ' "%3E%3C/svg%3E'}
+                            alt="placeholder"
                             style={{
                                 maxWidth: '100%',
                                 maxHeight: '60vh'
                             }}/>
                         </div>
-
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
