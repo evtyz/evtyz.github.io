@@ -51,6 +51,8 @@
 
 .closebutton {
     display: flex !important;
+    min-height: 35px;
+    min-width: 35px;
     height: 35px;
     width: 35px;
     align-items: center;
