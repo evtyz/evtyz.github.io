@@ -37,7 +37,7 @@
     },
     {
         "id": 1,
-        "name": "BiblioBarcode",
+        "name": "Biblio Barcode",
         "description": "An Android app that scans ISBN barcodes on books, formats them into a bibliography using a variety of styles, and stores them in a SQLite database.",
         "extendedDescription": "BiblioBarcode utilizes Google's Mobile Vision API to scan ISBN barcodes in photos, queries the Google Books API for metadata, and stores the resulting information in a SQLite database.",
         "tags": [

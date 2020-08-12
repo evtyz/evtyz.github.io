@@ -7,9 +7,9 @@ const projects = require("../projects.json")
 
 var projectLayout = []
 
-function loadProjects(item)
+function loadProjects(item, index)
 {
-    projectLayout.push(<Project info={item} />)
+    projectLayout.push(<Project info={item} key={index.toString()}/>)
 }
 
 function Projects()

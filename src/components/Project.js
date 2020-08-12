@@ -9,13 +9,9 @@ import { MdOpenInBrowser, MdRemoveRedEye, MdClose } from 'react-icons/md';
 
 let tags = [];
 
-
-function loadTags(item) {
-    tags.push(<Tag tag={item}/>)
+function loadTags(item, index) {
+    tags.push(<Tag tag={item} key={index.toString()} />)
 }
-
-
-
 
 const Project = (props) => {
 
