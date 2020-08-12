@@ -7,7 +7,7 @@
     --accentsemilight: #1effd2;
     --accent: rgba(0, 255, 204, 1);
     --accenttransparent: rgba(0, 255, 204, 0.25);
-    --accentdark: rgba(0, 207, 165, 1);
+    --accentdark: rgb(0, 207, 165);
     --accentdarktransparent: rgba(0, 207, 165, 0.25);
     --accentextradark: rgba(3, 171, 137, 1);
     --accentextradarktransparent: rgba(3, 171, 137, 0.25);
