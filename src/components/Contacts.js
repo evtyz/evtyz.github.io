@@ -5,8 +5,6 @@ import { Button, Spinner } from "react-bootstrap";
 import "./Contacts.css";
 import { MdSend } from "react-icons/md";
 
-
-
 class Contacts extends React.Component {
 
     state = {
@@ -21,23 +19,23 @@ class Contacts extends React.Component {
 
         var fields = Object.keys(elements)
             .filter(function (k) {
-            if (elements[k].name === "honeypot") {
-                honeypot = elements[k].value;
-                return false;
-            }
-            return true;
+                if (elements[k].name === "honeypot") {
+                    honeypot = elements[k].value;
+                    return false;
+                }
+                return true;
             })
             .map(function (k) {
-            if (elements[k].name !== undefined) {
-                return elements[k].name;
-                // special case for Edge's html collection
-            } else if (elements[k].length > 0) {
-                return elements[k].item(0).name;
-            }
-            return null;
+                if (elements[k].name !== undefined) {
+                    return elements[k].name;
+                    // special case for Edge's html collection
+                } else if (elements[k].length > 0) {
+                    return elements[k].item(0).name;
+                }
+                return null;
             })
             .filter(function (item, pos, self) {
-            return self.indexOf(item) === pos && item;
+                return self.indexOf(item) === pos && item;
             });
 
         var formData = {};
@@ -49,14 +47,14 @@ class Contacts extends React.Component {
 
             // when our element has multiple items, get their values
             if (element.length) {
-            var data = [];
-            for (var i = 0; i < element.length; i++) {
-                var item = element.item(i);
-                if (item.checked || item.selected) {
-                data.push(item.value);
+                var data = [];
+                for (var i = 0; i < element.length; i++) {
+                    var item = element.item(i);
+                    if (item.checked || item.selected) {
+                    data.push(item.value);
+                    }
                 }
-            }
-            formData[name] = data.join(", ");
+                formData[name] = data.join(", ");
             }
         });
 
@@ -65,7 +63,10 @@ class Contacts extends React.Component {
         formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
         formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-        return { data: formData, honeypot: honeypot };
+        return {
+            data: formData, 
+            honeypot: honeypot 
+        };
     }
 
     handleFormSubmit = (event) => {
@@ -104,7 +105,7 @@ class Contacts extends React.Component {
         // url encode form data for sending as post data
         var encoded = Object.keys(data)
             .map(function (k) {
-            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
             })
             .join("&");
         xhr.send(encoded);
@@ -128,7 +129,6 @@ class Contacts extends React.Component {
         return (
         <div>
             <h2>contact me</h2>
-
             <p>Leave a message and say hello!</p>
 
             <form
@@ -137,34 +137,38 @@ class Contacts extends React.Component {
             action="https://script.google.com/macros/s/AKfycbwbR6eJiLEzFH19K7gBaOVlizxtZ1X7f5W2p3DtJ3-WnOtpDPY/exec"
             onSubmit={this.handleFormSubmit}
             >
-                <div style={{ display: "flex", flexDirection: "column" }}>
+                <div 
+                    style={{ 
+                        display: "flex", 
+                        flexDirection: "column" 
+                    }}>
                     <div
-                    style={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        marginLeft: "-1em",
-                        marginRight: "-1em",
-                    }}
+                        style={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            marginLeft: "-1em",
+                            marginRight: "-1em",
+                        }}
                     >
                     <fieldset className="pure-group inlinegroup">
                         <label>Name: </label>
                         <input
-                        id="name"
-                        name="name"
-                        className="field"
-                        placeholder="John Doe"
-                        required
+                            id="name"
+                            name="name"
+                            className="field"
+                            placeholder="John Doe"
+                            required
                         />
                     </fieldset>
                     <fieldset className="pure-group inlinegroup">
                         <label>Email Address: </label>
                         <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        className="field"
-                        placeholder="john.doe@example.com"
-                        required
+                            id="email"
+                            name="email"
+                            type="email"
+                            className="field"
+                            placeholder="john.doe@example.com"
+                            required
                         />
                     </fieldset>
                     </div>
@@ -193,25 +197,25 @@ class Contacts extends React.Component {
                     <input id="honeypot" type="text" name="honeypot" />
                     </fieldset>
                     <Button
-                    type="submit"
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginTop: "1.5em",
-                        borderRadius: "0.5em",
-                        marginRight: 0,
-                    }}
+                        type="submit"
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginTop: "1.5em",
+                            borderRadius: "0.5em",
+                            marginRight: 0,
+                        }}
                     >
                     <Spinner
                         id="loading"
                         animation="border"
                         size="sm"
                         style={{
-                        marginTop: "auto",
-                        marginBottom: "auto",
-                        marginRight: "0.5em",
-                        display: this.state.loading ? "inline-block" : "none",
+                            marginTop: "auto",
+                            marginBottom: "auto",
+                            marginRight: "0.5em",
+                            display: this.state.loading ? "inline-block" : "none",
                         }}
                     />
                     <MdSend style={{ marginRight: "0.5em" }} />
@@ -219,11 +223,12 @@ class Contacts extends React.Component {
                     </Button>
                 </div>
                 <p
-                style={{
-                    marginTop: "1em",
-                    fontWeight: 400,
-                    display: this.state.thankyou ? "inline-block" : "none"
-                }}>
+                    style={{
+                        marginTop: "1em",
+                        fontWeight: 400,
+                        display: this.state.thankyou ? "inline-block" : "none"
+                    }}
+                >
                     Your message has been sent! I'll get back to you as soon as possible.
                 </p>
             </form>

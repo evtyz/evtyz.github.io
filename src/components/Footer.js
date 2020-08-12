@@ -6,9 +6,10 @@ import './Footer.css'
 function Footer()
 {
     return (
-        <p className="footer">© {new Date().getFullYear()} Evan Zheng
-        <br/>This website was made using React.js, Node.js, and Bootstrap, and hosted using Github Pages.
-        The repo can be seen <a href={"https://github.com/richmondvan/richmondvan.github.io"}>here</a>.<br/>
+        <p className="footer">
+            © {new Date().getFullYear()} Evan Zheng <br/>
+            This website was made using React.js, Node.js, and Bootstrap, and hosted using Github Pages.
+            The repo can be seen <a href={"https://github.com/richmondvan/richmondvan.github.io"}>here</a>.
         </p>
     );
 }

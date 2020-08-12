@@ -10,29 +10,32 @@ import "./App.css";
 import { Container } from "react-bootstrap";
 
 function App() {
-  return (
-    <div id="site">
-      <div id="deco">
-        <div id="background">
-          <Background />
+    return (
+        <div id="site">
+            <div id="background">
+                <Background />
+            </div>
+            <div id="foreground">
+                <Navigation />
+                <Container>
+                    <div>
+                        <Home />
+                        <hr id="projects"/>
+                        <Projects />
+                        <hr id="contacts"/>
+                        <Contacts />
+                        <hr 
+                            style={{ 
+                                marginBottom: "1em", 
+                                width: "auto", 
+                                borderWidth: "0.5px" 
+                            }} />
+                        <Footer />
+                    </div>
+                </Container>
+            </div>
         </div>
-      </div>
-      <div id="foreground">
-        <Navigation />
-        <Container>
-          <div>
-            <Home />
-            <hr id="projects"/>
-            <Projects />
-            <hr id="contacts"/>
-            <Contacts />
-            <hr style={{ marginBottom: "1em", width: "auto", borderWidth: "0.5px" }} />
-            <Footer />
-          </div>
-        </Container>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;

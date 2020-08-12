@@ -9,13 +9,13 @@ class TypewriterModified extends Typewriter {
     runTypewriter() {
         const instance = new TypewriterCore(this.typewriter, this.props.options);
         this.setState({
-          instance,
+            instance,
         }, () => {
-          const { onInit } = this.props;
-          
-          if(onInit) {
-            onInit(instance);
-          }
+            const { onInit } = this.props;
+            
+            if(onInit) {
+                onInit(instance);
+            }
         });
     }
 }

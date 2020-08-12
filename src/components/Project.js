@@ -31,17 +31,37 @@ const Project = (props) => {
     return (
         <div className="project">
             <div className="description">
-                <img src={info.logo} alt={info.name} className="projectmargin" style={{marginLeft: '1em', marginRight: '1em', width: '192px', height: '192px'}}/>
-                <div style={{flexBasis: '70%', flexGrow: 1, margin: '1em'}}>
-                    <h3 className="projectmargin">{info.name}</h3>
+                <img 
+                    src={info.logo} 
+                    alt={info.name} 
+                    className="projectmargin" 
+                    style={{
+                        marginLeft: '1em', 
+                        marginRight: '1em', 
+                        width: '192px', 
+                        height: '192px'
+                    }}
+                />
+                <div 
+                    style={{
+                        flexBasis: '70%', 
+                        flexGrow: 1, 
+                        margin: '1em'
+                    }}
+                >
+                    <h3 className="projectmargin">
+                        {info.name}
+                    </h3>
                     <div className="projectmargin">
                         {tags}
                     </div>
-                    <p className="projectmargin">{info.description}</p>
+                    <p className="projectmargin">
+                        {info.description}
+                    </p>
                 </div>
             </div>
             <div className="buttons">
-                <Button className="marginaround" variant="outline-primary" href={info.github} style={{}}>
+                <Button className="marginaround" variant="outline-primary" href={info.github}>
                     <GoMarkGithub style={{marginRight: '0.5em'}}/>
                     Github
                 </Button>
@@ -79,8 +99,11 @@ const Project = (props) => {
                                 width: 'min(100%, ' + (60 * info.gifdimensions[0] / info.gifdimensions[1]) + 'vh)',
                                 maxHeight: '60vh'
                             }}>
-                                <img src={info.gif} alt={info.name + " demonstration"} 
-                                className="modalimage"/>
+                                <img 
+                                    src={info.gif} 
+                                    alt={info.name + " demonstration"} 
+                                    className="modalimage"
+                                />
                             </div>
                         </div>
                         {/* To prevent content reflow */}
@@ -112,7 +135,6 @@ const Project = (props) => {
                             Close
                         </Button>
                     </div>
-
                 </Modal.Footer>
             </Modal>
         </div>

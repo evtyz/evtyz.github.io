@@ -8,15 +8,13 @@ import {Button} from 'react-bootstrap';
 function Home() {
     return (
         <div className="landing">
-            <div>
-                <TypewriterModified
-                    ref={(component) => {window.typewriter = component}}
-                    onInit={(typewriter) => {
-                        typewriter.typeString("<h1>Hi, I'm Evan!<h1>").start();
-                    }}
-                    options={{cursor: "<h1>|<h1>"}}
-                />
-            </div>
+            <TypewriterModified
+                ref={(component) => {window.typewriter = component}}
+                onInit={(typewriter) => {
+                    typewriter.typeString("<h1>Hi, I'm Evan!<h1>").start();
+                }}
+                options={{cursor: "<h1>|<h1>"}}
+            />
             <br/>
             <p className="about" style={{fontWeight: 400}}>
                 I'm a programmer based in Toronto, ON, studying at St. Theresa of Lisieux CHS.

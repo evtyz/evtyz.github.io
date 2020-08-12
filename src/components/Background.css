@@ -25,18 +25,6 @@ body .bg {
     left: var(--xposition);
     top: var(--yposition);
     margin: auto;    
-
-    /* -webkit-animation-name: bubble-size, bubble-move;
-    -webkit-animation-duration: var(--time, 4s), var(--time, 4s);
-    -webkit-animation-timing-function: ease-in, ease-in;
-    -webkit-animation-iteration-count: infinite, infinite;
-    -webkit-animation-delay: var(--delay, 0.1s), var(--delay, 0.1s);
-    -webkit-animation-direction: normal, normal;
-    -webkit-animation-fill-mode: none, none;
-    -webkit-animation-play-state: running, running; */
-
-    /* transform:translate3d(-50%, 100%, 0); */
-    /* transform: translate(-50%, 100%); */
 }
 
 .bg .bubbles {
@@ -46,9 +34,6 @@ body .bg {
     right: 0;
     height: max(10vh, 40px);
     width: 200vw;
-    /* background:var(--accent); */
-    /* -webkit-filter:url("#blob");
-    filter:url("#blob"); */
 }
 
 @keyframes bubble-size {
@@ -71,11 +56,9 @@ body .bg {
     50% {
         width: calc(0.85 * var(--size, 4rem));
         height: calc(0.85 * var(--size, 4rem));
-        /* transform: translate(calc(var(--size, 4rem) * 0.025), calc(var(--size, 4rem) * 0.025)) */
     }
     100% {
         width:var(--size, 4rem);
         height:var(--size, 4rem);
-        /* transform: translate(calc(var(--size, 4rem) * -0.025), calc(var(--size, 4rem) * -0.025)) */
     }
 }

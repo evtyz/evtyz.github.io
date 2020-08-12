@@ -17,9 +17,7 @@
 }
 
 #background {
-    /* transform-origin: top center; */
     position: fixed;
-    /* transform: translateX(-50vw) rotate(45deg); */
     z-index: -100;
 }
 
@@ -36,7 +34,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     background-color: var(--bgcolor);
-    /* background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=100); */
     background-size: cover;
     color: rgba(0, 0, 0, .75);
 }
@@ -72,15 +69,6 @@ body a:hover {
 }
 
 body code {
-    /* color: white;
-    background-color: var(--accentextradark);
-    padding: 2px;
-    margin: -2px;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-radius: 0.3em; */
     color: rgba(0, 0, 0, .75);
     font-family: 'Roboto Mono', monospace;
 }
