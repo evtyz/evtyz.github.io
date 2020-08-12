@@ -1,5 +1,7 @@
 # https://richmondvan.github.io/
 
+Personal website of Evan Zheng.
+
 Made using React.js and Node.js, set-up with [Create React App](https://github.com/facebook/create-react-app), and styled with [React Bootstrap](https://react-bootstrap.github.io/).
 
 Uses the following libraries:
