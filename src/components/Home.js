@@ -2,18 +2,15 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 import './Home.css'
-import Typewriter from 'typewriter-effect';
+import TypewriterModified from './TypewriterModified'
 import {Button} from 'react-bootstrap';
 
-function Home()
-{
+function Home() {
     return (
         <div className="landing">
             <div>
-                
-            </div>
-            <div>
-                <Typewriter
+                <TypewriterModified
+                    ref={(component) => {window.typewriter = component}}
                     onInit={(typewriter) => {
                         typewriter.typeString("<h1>Hi, I'm Evan!<h1>").start();
                     }}
@@ -39,7 +36,6 @@ function Home()
                     contact me
                 </Button>
             </div>
-
         </div>
     );
 }

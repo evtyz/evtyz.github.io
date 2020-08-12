@@ -18,8 +18,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <title>Evan Zheng</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this website.</noscript>
+  <body style="visibility: hidden;" onload=OnLoad()>
+    <noscript style="visibility: visible">You need to enable JavaScript to run this website.</noscript>
     <div id="root"></div>
+    <script>
+      function animate(bubble) {
+        console.log("animating");
+        bubble.classList.add("bubbleanim");
+      }
+
+      function OnLoad() {
+        document.body.style.visibility="visible";
+        var bubbles = document.getElementsByClassName("bubble");
+        [].forEach.call(bubbles, animate)
+        window.typewriter.runTypewriter();
+      }
+    </script>
   </body>
 </html>

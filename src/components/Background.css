@@ -7,17 +7,7 @@ body .bg {
     background:var(--accent);
 }
 
-
-
-.bg .bubbles .bubble {
-    position: absolute;
-    background:var(--accent);
-    border-radius:100%;
-    left: var(--xposition);
-    top: var(--yposition);
-    margin: auto;    
-
-
+.bubbleanim {
     animation-name: bubble-size, bubble-bounce;
     animation-duration: var(--time, 4s), calc(var(--time, 4s) * 0.3);
     animation-timing-function: ease-out, ease-in-out;
@@ -26,6 +16,15 @@ body .bg {
     animation-direction: normal, normal;
     animation-fill-mode: forwards, forwards;
     animation-play-state: running, running;
+}
+
+.bg .bubbles .bubble {
+    position: absolute;
+    background:var(--accent);
+    border-radius:100%;
+    left: var(--xposition);
+    top: var(--yposition);
+    margin: auto;    
 
     /* -webkit-animation-name: bubble-size, bubble-move;
     -webkit-animation-duration: var(--time, 4s), var(--time, 4s);
