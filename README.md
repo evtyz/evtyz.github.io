@@ -1,5 +1,7 @@
 # https://richmondvan.github.io/
 
+Personal website of Evan Zheng.
+
 Made using React.js and Node.js, set-up with [Create React App](https://github.com/facebook/create-react-app), and styled with [React Bootstrap](https://react-bootstrap.github.io/).
 
 Uses the following libraries:
@@ -11,7 +13,7 @@ Uses the following libraries:
 As well as custom adaptations of the following code:
 - [html-form-send-email-via-google-script-without-server](https://www.npmjs.com/package/html-form-send-email-via-google-script-without-server).
 
-Font: "Poppins" from Google Fonts.
+Font: [Poppins](https://fonts.google.com/specimen/Poppins) and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) from Google Fonts.
 
 ## Create-React-App default documentation
 
