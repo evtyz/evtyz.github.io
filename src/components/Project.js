@@ -89,6 +89,7 @@ const Project = (props) => {
                     <div className="modalwindow">
                         {info.extendedDescription}<br/><br/>
                         <div style={{
+                            zIndex: 1,
                             width: '100%',
                             position: 'relative'
                         }}>
@@ -108,6 +109,7 @@ const Project = (props) => {
                         </div>
                         {/* To prevent content reflow */}
                         <div style={{
+                            zIndex: -1,
                             width: '100%',
                             position: 'relative'
                         }}>
