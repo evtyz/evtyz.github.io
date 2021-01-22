@@ -1,4 +1,4 @@
-# https://richmondvan.github.io/
+# https://evanzheng.com/
 
 Personal website of Evan Zheng.
 
