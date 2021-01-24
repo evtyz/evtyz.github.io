@@ -4,10 +4,15 @@ import "../App.css";
 import { Button, Spinner } from "react-bootstrap";
 import "./Contacts.css";
 import { MdSend } from "react-icons/md";
+import ReCAPTCHA from "react-google-recaptcha";
 
 class Contacts extends React.Component {
 
+    recaptchaRef = React.createRef();
+
+
     state = {
+        captcharequest: false,
         loading : false,
         thankyou: false
     }
@@ -76,6 +81,18 @@ class Contacts extends React.Component {
         var formData = this.getFormData(form);
         var data = formData.data;
 
+        console.log("Captcha onsubmit:", this.recaptchaRef.current.getValue());
+
+        if (this.recaptchaRef.current.getValue() === "") {
+            console.log("Robot detected");
+            this.setState({
+                captcharequest: true,
+                loading: false,
+                thankyou: false
+            })
+            return false;
+        }
+
         // If a honeypot field is filled, assume it was done so by a spam bot.
         if (formData.honeypot) {
             console.log("honeypot");
@@ -96,10 +113,12 @@ class Contacts extends React.Component {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 form.reset();
                 this.setState({
+                    captcharequest: false,
                     loading: false,
                     thankyou: true
                 })
                 this.enableAllButtons(form);
+                this.recaptchaRef.current.reset();
             }
         };
         // url encode form data for sending as post data
@@ -123,6 +142,10 @@ class Contacts extends React.Component {
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = false;
         }
+    }
+
+    onCaptchaChange = (value) => {
+        console.log("Captcha value:", value);
     }
 
     render() {
@@ -196,6 +219,16 @@ class Contacts extends React.Component {
                     <fieldset className="pure-group honeypot-field">
                     <input id="honeypot" type="text" name="honeypot" />
                     </fieldset>
+                    <ReCAPTCHA
+                        style={{
+                            marginTop: "1em",
+                            display: "flex",
+                            justifyContent: "center"
+                        }}
+                        ref = {this.recaptchaRef}
+                        sitekey = "6LffoDoaAAAAAO_YgbYUW1wxni120y1VbDpk5Ogz"
+                        onChange = {this.onCaptchaChange}
+                    />
                     <Button
                         type="submit"
                         style={{
@@ -224,12 +257,33 @@ class Contacts extends React.Component {
                 </div>
                 <p
                     style={{
+                        width: "100%",
+                        borderRadius: "0.5em",
+                        backgroundColor: "var(--accentdark)",
+                        padding: "0.5em",
+                        color: "white",
                         marginTop: "1em",
                         fontWeight: 400,
-                        display: this.state.thankyou ? "inline-block" : "none"
+                        display: this.state.thankyou ? "flex" : "none",
+                        justifyContent: "center"
                     }}
                 >
                     Your message has been sent! I'll get back to you as soon as possible.
+                </p>
+                <p
+                    style={{
+                        width: "100%",
+                        borderRadius: "0.5em",
+                        backgroundColor: "red",
+                        padding: "0.5em",
+                        color: "white",
+                        marginTop: "1em",
+                        fontWeight: 400,
+                        display: this.state.captcharequest ? "flex" : "none",
+                        justifyContent: "center"
+                    }}
+                >
+                    Your message could not be sent. Please verify that you are human first!
                 </p>
             </form>
         </div>
