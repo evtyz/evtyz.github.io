@@ -5,6 +5,7 @@ Personal website of Evan Zheng.
 Made using React.js and Node.js, set-up with [Create React App](https://github.com/facebook/create-react-app), and styled with [React Bootstrap](https://react-bootstrap.github.io/).
 
 Uses the following libraries:
+- [React-Google-Recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
 - [Typewriter-Effect](https://www.npmjs.com/package/typewriter-effect)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [gh-pages](https://www.npmjs.com/package/gh-pages)
