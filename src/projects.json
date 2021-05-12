@@ -12,8 +12,8 @@
             "Matplotlib",
             "scikit-image"
         ],
-        "github": "https://github.com/richmondvan/Shapevolve",
-        "website": "https://richmondvan.github.io/Shapevolve",
+        "github": "https://github.com/evtyz/Shapevolve",
+        "website": "https://evtyz.github.io/Shapevolve",
         "logo": "./projectimg/shapevolve.png",
         "gif": "./projectgif/shapevolve.gif",
         "gifdimensions": [496, 480]
@@ -29,8 +29,8 @@
             "Apache Maven",
             "Apache Shade"
         ],
-        "github": "https://github.com/richmondvan/threebodysimulation",
-        "website": "https://richmondvan.github.io/threebodysimulation/",
+        "github": "https://github.com/evtyz/threebodysimulation",
+        "website": "https://evtyz.github.io/threebodysimulation/",
         "logo": "./projectimg/threebodysim.png",
         "gif": "./projectgif/threebodysim.gif",
         "gifdimensions": [1196, 921]
@@ -46,8 +46,8 @@
             "Gradle",
             "SQLite"
         ],
-        "github": "https://github.com/richmondvan/BiblioBarcode",
-        "website": "https://richmondvan.github.io/BiblioBarcode/",
+        "github": "https://github.com/evtyz/BiblioBarcode",
+        "website": "https://evtyz.github.io/BiblioBarcode/",
         "logo": "./projectimg/bibliobarcode.png",
         "gif": "./projectgif/bibliobarcode.gif",
         "gifdimensions": [450, 960]

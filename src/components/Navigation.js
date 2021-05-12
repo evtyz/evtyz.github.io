@@ -24,7 +24,7 @@ function Navigation() {
                             <Nav.Link className='navicon' href="./Resume.pdf">
                                 <IoMdDocument size='18px'/>
                             </Nav.Link>
-                            <Nav.Link className='navicon' href="https://github.com/richmondvan">
+                            <Nav.Link className='navicon' href="https://github.com/evtyz">
                                 <GoMarkGithub/>
                             </Nav.Link>
                         </li>

@@ -18,13 +18,13 @@ function Home() {
             <br/>
             <p className="about" style={{fontWeight: 400}}>
                 I'm a programmer based in Toronto, ON, studying at St. Theresa of Lisieux CHS.
-                My online handle is <code>richmondvan</code>. <br/> <br/> 
+                My online handle is <code>evtyz</code>. <br/> <br/> 
             </p>
             <div className='buttongroup'>
                 <Button href="./Resume.pdf" variant="primary marginup">
                     résumé
                 </Button>
-                <Button href="https://github.com/richmondvan" variant="primary marginup">
+                <Button href="https://github.com/evtyz" variant="primary marginup">
                     github
                 </Button>
                 <Button href="#projects" variant="primary marginup">
