@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { GoMarkGithub } from 'react-icons/go';
 import { IoMdDocument } from 'react-icons/io'
+import {FaLinkedin} from 'react-icons/fa'
 import '../App.css'
 import './Navigation.css';
 
@@ -26,6 +27,9 @@ function Navigation() {
                             </Nav.Link>
                             <Nav.Link className='navicon' href="https://github.com/evtyz">
                                 <GoMarkGithub/>
+                            </Nav.Link>
+                            <Nav.Link className='navicon' href="https://www.linkedin.com/in/evtyz/">
+                                <FaLinkedin/>
                             </Nav.Link>
                         </li>
                     </Nav>

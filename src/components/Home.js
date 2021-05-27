@@ -17,7 +17,7 @@ function Home() {
             />
             <br/>
             <p className="about" style={{fontWeight: 400}}>
-                I'm a programmer based in Toronto, ON, studying at St. Theresa of Lisieux CHS.
+                I'm a CS student at the University of Waterloo.
                 My online handle is <code>evtyz</code>. <br/> <br/> 
             </p>
             <div className='buttongroup'>
@@ -26,6 +26,9 @@ function Home() {
                 </Button>
                 <Button href="https://github.com/evtyz" variant="primary marginup">
                     github
+                </Button>
+                <Button href="https://www.linkedin.com/in/evtyz/" variant="primary marginup">
+                    linkedin
                 </Button>
                 <Button href="#projects" variant="primary marginup">
                     projects
