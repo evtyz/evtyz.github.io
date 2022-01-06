@@ -22,7 +22,7 @@ function Navigation() {
                     </Nav>
                     <Nav>
                         <li style={{display: 'flex'}}>
-                            <Nav.Link className='navicon' href="./Resume.pdf">
+                            <Nav.Link className='navicon' href="./resume.pdf">
                                 <IoMdDocument size='18px'/>
                             </Nav.Link>
                             <Nav.Link className='navicon' href="https://github.com/evtyz">

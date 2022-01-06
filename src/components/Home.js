@@ -21,7 +21,7 @@ function Home() {
                 My online handle is <code>evtyz</code>. <br/> <br/> 
             </p>
             <div className='buttongroup'>
-                <Button href="./Resume.pdf" variant="primary marginup">
+                <Button href="./resume.pdf" variant="primary marginup">
                     résumé
                 </Button>
                 <Button href="https://github.com/evtyz" variant="primary marginup">
