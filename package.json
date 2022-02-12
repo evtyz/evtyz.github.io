@@ -1,19 +1,19 @@
 {
-  "name": "richmondvan.github.io",
+  "name": "evanzheng.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://richmondvan.github.io/",
+  "homepage": "https://evanzheng.com/",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.6.0",
-    "react": "^16.13.1",
+    "react": "^17.0.2",
     "react-bootstrap": "^1.5.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
     "react-icons": "^3.10.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^5.0.0",
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
